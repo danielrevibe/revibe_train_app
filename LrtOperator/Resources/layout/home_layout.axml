@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Start GPS Feed"
+        android:id="@+id/btnStart" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Stop GPS Feed"
+        android:id="@+id/btnStop"
+        android:layout_below="@id/btnStart" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="2dp"
+        android:layout_below="@id/btnStop">
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+            <TextView
+                android:text="Train Density"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView1" />
+            <Button
+                android:text="Light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLight" />
+            <Button
+                android:text="Moderate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnModerate" />
+            <Button
+                android:text="Heavy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnHeavy" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
